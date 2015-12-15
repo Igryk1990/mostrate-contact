@@ -7,38 +7,32 @@
 	border: 0;
 	vertical-align: baseline;
 }
-.verh {
+.logo {
 	font-size:1.5rem;
 	margin: 2%;
 }
-.title a {
+.navigation a {
 	text-decoration: none;
 }
-.title{
-	display: blok;
-	background-color:#D5B041;
-	padding:10px;
+.navigation{
+    background-color:#D5B041;
+	display: block; 
+	padding: 15px;
+	list-style: outside none none;
 }
-.title ul {
-	margin: 0px;
-    padding: 0px;
-    list-style: outside none none;
-	margin-left: 15px;
+
+.navigation-link {
+	margin-left:10px;
+	display: inline-block; 
 }
-.title li {
-	display: inline-block;
-    padding: 5px 0px;
-    margin-left: 5px;
-}
-.layout {
-    
-}
+
 aside {
 	float:left;
 	margin-top: 2%;
 	margin-left:2%;
 	color: #CCCF9B;
 	font-size:1.5rem;
+	width:18%;
 }
 .content{
 	margin-left:20%;
