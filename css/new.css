@@ -2,9 +2,11 @@ body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,label,form,fieldset,input,tex
 	margin:0;
 	padding:0
 	}
+html {
+	height: 100%;
+}
 body {
-	width: 1200px;
-	margin: 0 auto;
+	height: 100%;
 }
 ul li {
 	list-style:none;
@@ -13,12 +15,17 @@ b {
 	opacity:0.6;
 	font-weight:normal;
 }
+@font-face {
+	font-family:Yellowtail;
+	src:url(../fonts/yellowtail/Yellowtail-Regular.otf);
+}
 /*aside*/
 .aside {
-	background-color:#202020;
-	position:absolute;
+	background: url(../img/background2.png);
+	background-size: cover;
+	float:left;
 	width:240px;
-	height:810px;
+	height:100%;
 }
 /*logo*/
 .logo {
@@ -27,9 +34,8 @@ b {
 }
 .logo h1 {
 	font-size:2rem;
-	font-style: italic;
 	color:#f39c12;
-	font-family:Comic Sans;
+	font-family:Yellowtail;
 }
 .logo p{
 	color:#ffffff;
@@ -65,9 +71,10 @@ b {
 	padding-top:30px;
 	padding-left:10px;
 	color:#ffffff;
+	width:240px;
 }
 .tweet img {
-	position:absolute;
+    float:left;
 }
 .tweet-one{
 	padding-top:5px;
@@ -94,14 +101,14 @@ b {
 }
 /*content*/
 .content {
-	position:absolute;
-	background-color:#2a2a2a;
+	background: url(../img/background1.png);
+	background-size: cover;
 	margin-left:240px;
-	width:960px;
-	height:810px;
+	height:100%
 }
 /*header*/
 .header{
+	width:700px;
 	padding-top:15px;
 	padding-left:20px;
 }
@@ -115,15 +122,12 @@ b {
 }
 /*img*/
 .img {
-	position:absolute;
 	padding-top:30px;
 	padding-left:20px;
-	height:100px;
-	width:100px;
+    float: left; 
 }
 /*article*/
 .article {
-	position:absolute;
 	padding-top:30px;
 	padding-left:250px;
 	width:400px;
@@ -145,8 +149,7 @@ b {
 }
 /*skills*/
 .skills {
-	position:absolute;
-	margin-top:350px;
+	margin-top:120px;
 	margin-left:20px;
 }
 .skills p {
