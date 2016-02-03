@@ -183,24 +183,32 @@ body {
 }
 .bar {
 	background-color:#202020;
-	width:100%;
+	width:570px;
 	border-radius:5px;
 }
 
-.bar-fill {
+#bar-fill {
 	background-color:#f39c12;
 	height:45px;
-	width:89%;
-	display:block;
+	width:0;
+	max-width:89%;
 	border-radius:5px;
 }
-.bar-fill.two {
-	width:95%;
+#bar-fill-two {
+	background-color:#f39c12;
+	height:45px;
+	width:0;
+	max-width:95%;
+	border-radius:5px;
 }
-.bar-fill.three{
-	width:65%;
+#bar-fill-three{
+	background-color:#f39c12;
+	height:45px;
+	width:0;
+	max-width:65%;
+	border-radius:5px;
 }
-.bar-fill > p{
+.bar p{
 	width:140%;
 	padding-top:13px;
 	padding-left:10px;

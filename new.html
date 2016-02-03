@@ -4,8 +4,33 @@
 <meta charset="utf-8">
 <title>Jonhathan Doe</title>
 <link rel="stylesheet" href="css/new.css" />
+<script type="text/javascript">
+function progress()
+    {
+        var i=0;
+        var width= document.getElementById('bar-fill-two').parentNode.clientWidth;
+		var width= document.getElementById('bar-fill').parentNode.clientWidth;
+		var width= document.getElementById('bar-fill-three').parentNode.clientWidth;
+        var id=setInterval(grow, 10)
+        
+        function grow()
+        {
+            if(i<width)
+            {
+                i+=1;
+                if(!document.getElementById('bar-fill').setAttribute("style","width: "+i+"px;"))
+                    document.getElementById('bar-fill').style.width = i;
+                if(!document.getElementById('bar-fill-two').setAttribute("style","width: "+i+"px;"))
+                    document.getElementById('bar-fill-two').style.width = i;
+                if(!document.getElementById('bar-fill-three').setAttribute("style","width: "+i+"px;"))
+                    document.getElementById('bar-fill-three').style.width = i;
+                
+            }
+        }
+    }
+</script>
 </head> 
-<body>
+<body onload="progress()">
      <div class="body">
          <div class="aside">
 	         <div class="logo">
@@ -73,17 +98,17 @@
 		         <p>PHOTOGRAPHY SKILLS</p> 
 		         <div class="container">
                      <div class="bar">
-                         <span class="bar-fill"><p>Portraits <span>89%</span></p></span>
+                         <div id="bar-fill"><p>Portraits<span>89%</span></p></div>
                      </div>
                  </div>
-		         <div class="container">
+				 <div class="container">
                      <div class="bar">
-                         <span class="bar-fill two"><p>Editorial <span>95%</span></p></span>
+                         <div id="bar-fill-two"><p>Editorial<span>95%</span></p></div>
                      </div>
                  </div>
-		         <div class="container">
+				 <div class="container">
                      <div class="bar">
-                         <span class="bar-fill three"><p>Fashion<span>65%</span></p></span>
+                         <div id="bar-fill-three"><p>Fashion<span>65%</span></p></div>
                      </div>
                  </div>
 		     </div>
