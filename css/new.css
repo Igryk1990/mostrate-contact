@@ -19,13 +19,14 @@ html {
 }
 body {
 	height:100%;
+	background-image:url(../img/background.png);
 }
 .body {
 	height:110%;
 }
 /*aside*/
 .aside {
-	background: url(../img/background2.png);
+	background: url(../img/background1.png);
 	background-size: cover;
 	float:left;
 	width:240px;
@@ -119,103 +120,83 @@ body {
 }
 /*content*/
 .content {
-	background: url(../img/background1.png);
+	background: url(../img/background2.png);
 	background-size: cover;
-	margin-left:240px;
+	padding-left:240px;
 	height:100%;
 }
-/*header*/
 .header{
 	width:700px;
 	padding-top:15px;
 	padding-left:20px;
 }
-.header  h1 {
+.header p {
 	color:#f39c12;
 	font-size:2.6rem;
 }
-.header p{
+.header p + p {
 	color:#ffffff;
 	font-size:2rem;
 }
-/*img*/
-.img {
-	padding-top:30px;
-	padding-left:20px;
-    float: left; 
-}
-/*article*/
 .article {
-	padding-top:30px;
-	padding-left:250px;
-	width:400px;
+	color:#fff;
+	padding-left:20px;
+	padding-top:20px;
+	width:600px;
 }
-.article-one{
-	color:#ffffff;
-	font-size:1rem;
-	width:350px;
-}
-.article-two {
-	padding-top:10px;
-	color:#f39c12;
-	font-size:0.8rem;
-	width:380px;
-}
-.article-three {
-	padding-top:10px;
-	color:#ffffff;
-}
-/*progress*/
-.progress {
-	padding-top:120px;
+.contact1 {
+	padding-top:20px;
 	padding-left:20px;
 }
+.form {
+	margin-top:10px;
+	height:30px;
+	width:400px;
+	background:#202020;
+}
+.form img {
+	float:left;
+	padding-top:5px;
+}
 
-.progress > p {
-	font-size:1.3rem;
-	color:#ffffff;
+input {
+	height:20px;
+	width:300px;
+	background:#202020;
+	padding-top:4px;
+	border:0;
 }
-/*container*/
-.container {
-	padding-top:10px;
-	padding-bottom:5px;
-	width:570px;
+
+
+textarea {
+	margin-top:10px;
+	
 }
-.bar {
+::-webkit-input-placeholder {
+	color:#fff;
+}
+::-moz-placeholder {
+	color:#fff;
+}
+:-moz-placeholder {
+	color:#fff;
+}
+:-ms-input-placeholder {
+	color:#fff;
+}
+textarea{
 	background-color:#202020;
-	width:570px;
-	border-radius:5px;
+	width:400px;
+	height:120px;
+	border:0;
 }
-
-#bar-fill {
+button {
 	background-color:#f39c12;
-	height:45px;
-	width:0;
-	max-width:89%;
-	border-radius:5px;
+	border:0;
+	width:130px;
+	height:30px;
+	text-align:center;
 }
-#bar-fill-two {
-	background-color:#f39c12;
-	height:45px;
-	width:0;
-	max-width:95%;
-	border-radius:5px;
+.button {
+	padding-top:10px;
 }
-#bar-fill-three{
-	background-color:#f39c12;
-	height:45px;
-	width:0;
-	max-width:65%;
-	border-radius:5px;
-}
-.bar p{
-	width:140%;
-	padding-top:13px;
-	padding-left:10px;
-	color:#2a2a2a;
-}
-p > span {
-	padding-left:460px;
-	color:#ffffff;
-}
-
