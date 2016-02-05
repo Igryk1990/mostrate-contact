@@ -1,2 +1,0 @@
-# Johnathan-Doe
-# mostrate-contact
